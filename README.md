@@ -1,6 +1,6 @@
-# Node.js Inventory Managment System
+## Inventory Managment System
 
-This is a simple RESTful API built with Node.js for managing an inventory system. It allows you to create, read, update, and delete items in the inventory and record transactions.
+This is a simple RESTful API built with Express.js for managing an inventory system. It allows you to create, read, update, and delete items in the inventory and record transactions.
 
 ## Installation
 
