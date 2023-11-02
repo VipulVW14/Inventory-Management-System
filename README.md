@@ -1,4 +1,4 @@
-# Node.js Inventory System
+# Node.js Inventory Managment System
 
 This is a simple RESTful API built with Node.js for managing an inventory system. It allows you to create, read, update, and delete items in the inventory and record transactions.
 
@@ -22,16 +22,36 @@ git clone https://github.com/yourusername/node-inventory-system.git
 cd node-inventory-system
 npm install
 node index.js
+ 
+## Overview
 
-## Endpoints:
+The Inventory Management System is built as a RESTful API using Node.js. It offers a set of API endpoints for managing inventory items and recording transactions. The system is organized into a clear folder structure, and the code is available in a GitHub repository.
 
-Items
-GET /items: Retrieve a list of all items.
-POST /items: Add a new item to the inventory.
-GET /items/:id: Retrieve a specific item by its id.
-PUT /items/:id: Update a specific item by its id.
-DELETE /items/:id: Remove a specific item from the inventory.
+## Database Schema
 
-Transactions
-POST /items/:id/transaction: Record a transaction for a specific item.
-GET /items/:id/transactions: Retrieve all transactions for a specific item.
+### Item Model
+- id: A unique identifier for the item.
+- name: The name of the item.
+- description: A description of the item.
+- quantity: The quantity of the item in the inventory.
+- last updated timestamp: The timestamp of the last update to the item.
+
+### Transaction Model
+- id: A unique identifier for the transaction.
+- item id: The id of the item associated with the transaction.
+- type: Either "IN" for items added to the inventory or "OUT" for items removed from the inventory.
+- quantity: The quantity involved in the transaction.
+- transaction timestamp: The timestamp of the transaction.
+
+## Assumptions
+
+- Database Choice: We assumed the use of MongoDB as the database for this project due to its flexibility and scalability. However, the system is designed to work with other databases as well.
+
+- Validation Rules: Assumptions were made about validation rules for data integrity. These rules include non-negative quantities and expected data formats.
+
+- Design Decision: The system design follows a RESTful API architecture to provide a clear and structured interface for managing inventory items and transactions.
+
+- Error Handling: Comprehensive error handling is implemented to provide meaningful error responses and enhance the user experience.
+
+- Additional Features: Additional features such as authentication and authorization were considered but are not implemented in this basic version of the system.
+
