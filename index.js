@@ -28,7 +28,11 @@ app.get('/items', async (req, res) => {
 // POST /items: Add a new item to the inventory
 app.post('/items', async (req, res) => {
   const { name, description, quantity } = req.body;
-
+  
+  if (!name || !description || !quantity) {
+    return res.status(400).json({ error: 'Incomplete data provided' });
+  }
+  
   try {
     const newItem = new Item({
       name,
@@ -132,7 +136,7 @@ app.get('/items/:id/transaction', async (req, res) => {
 });
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://vipulwasnik0:Vipul123@cluster0.boivexe.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true, dbName: "inventory" });
+mongoose.connect('mongodb+srv://vipulwasnik0:Vipul123@cluster0.boivexe.mongodb', { useNewUrlParser: true, useUnifiedTopology: true, dbName: "inventory" });
 
 app.listen(3001, () => console.log('Server running on port 3001'));
 
