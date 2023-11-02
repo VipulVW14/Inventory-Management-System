@@ -1,3 +1,11 @@
+## Installation
+
+```bash
+git clone https://github.com/yourusername/node-inventory-system.git
+cd node-inventory-system
+npm install
+node index.js
+```
 # Node.js Inventory Managment System
 
 This is a simple RESTful API built with Node.js for managing an inventory system. It allows you to create, read, update, and delete items in the inventory and record transactions.
@@ -14,18 +22,6 @@ This is a simple RESTful API built with Node.js for managing an inventory system
 - Node.js
 - npm or yarn
 - Your choice of database (MongoDB, MySQL, PostgreSQL, etc.)
-
-## Installation
-
-```bash
-git clone https://github.com/yourusername/node-inventory-system.git
-cd node-inventory-system
-npm install
-node index.js
- 
-## Overview
-
-The Inventory Management System is built as a RESTful API using Node.js. It offers a set of API endpoints for managing inventory items and recording transactions. The system is organized into a clear folder structure, and the code is available in a GitHub repository.
 
 ## Database Schema
 
