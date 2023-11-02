@@ -13,10 +13,8 @@ app.get('/', (req,res)=>{
 })
 
 const itemsRoutes = require('./src/routes/items');
-const transactionsRoutes = require('./src/routes/transactions');
 
 app.use('/items', itemsRoutes);
-app.use('/transactions', transactionsRoutes);
 
 // Connect to MongoDB
 mongoose.connect('mongodb+srv://vipulwasnik0:Vipul123@cluster0.boivexe.mongodb.net/', { useNewUrlParser: true, useUnifiedTopology: true, dbName: 'inventory' });
