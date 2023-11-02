@@ -13,15 +13,15 @@ node index.js
 ## Endpoints
 
 ## Items
-- GET /items: Retrieve a list of all items.
-- POST /items: Add a new item to the inventory.
-- GET /items/:id: Retrieve a specific item by its id.
-- PUT /items/:id: Update a specific item by its id.
-- DELETE /items/:id: Remove a specific item from the inventory.
+- GET /items : Retrieve a list of all items.
+- POST /items : Add a new item to the inventory.
+- GET /items/:id : Retrieve a specific item by its id.
+- PUT /items/:id : Update a specific item by its id.
+- DELETE /items/:id : Remove a specific item from the inventory.
 
 ## Transactions
-- POST /items/:id/transaction: Record a transaction for a specific item.
-- GET /items/:id/transactions: Retrieve all transactions for a specific item.
+- POST /items/:id/transaction : Record a transaction for a specific item.
+- GET /items/:id/transactions : Retrieve all transactions for a specific item.
 
 
 ## Features
