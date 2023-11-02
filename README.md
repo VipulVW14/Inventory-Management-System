@@ -3,6 +3,7 @@
 This is a simple RESTful API built with Express.js for managing an inventory system. It allows you to create, read, update, and delete items in the inventory and record transactions.
 
 ## Installation
+```bash
 git clone https://github.com/VipulVW14/Inventory-Management-System.git
 cd Inventory-Management-System
 npm install
