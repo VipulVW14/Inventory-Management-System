@@ -7,7 +7,8 @@ This is a simple RESTful API built with Express.js for managing an inventory sys
 git clone https://github.com/VipulVW14/Inventory-Management-System.git
 cd Inventory-Management-System
 npm install
-node index.js
+tsc -b
+node dist/index.js
 ```
 ## Endpoints
 
